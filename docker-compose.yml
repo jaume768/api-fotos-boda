@@ -40,7 +40,6 @@ services:
       - DB_HOST=db
       - DB_PORT=3306
       - DJANGO_WATCH_USE_POLLING=1
-    entrypoint: ["/bin/sh", "/app/entrypoint.sh"] 
     networks:
       - wedding_network
     restart: unless-stopped
