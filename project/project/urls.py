@@ -22,7 +22,7 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, Sp
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('wedding_gallery.urls')),
+    path('api/', include('wedding_gallery.urls')),
     
     # API Documentation
     path('schema/', SpectacularAPIView.as_view(), name='schema'),
