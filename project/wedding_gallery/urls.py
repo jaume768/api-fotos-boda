@@ -9,5 +9,5 @@ router.register(r'media', MediaViewSet, basename='media')
 app_name = 'wedding_gallery'
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path('', include(router.urls)),
 ]
